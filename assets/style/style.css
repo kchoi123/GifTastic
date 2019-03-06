@@ -1,2 +1,34 @@
-// Styling GifTastic Project
+/* Styling GifTastic Project */
 
+body {
+    width: 750px;
+    margin: 0 auto;
+    font: 18px arial, sans-serif;
+}
+
+#header {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    font: 30px arial, sans-serif;
+}
+
+#container {
+    background-color:grey;
+}
+
+#addMore {
+    background-color: grey;
+}
+
+#gif {
+    background-color: blueviolet;
+}
+
+#buttons {
+    background-color: brown;
+}
+
+.dog-button {
+    font: 7px;
+}
