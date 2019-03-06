@@ -4,6 +4,7 @@ body {
     width: 750px;
     margin: 0 auto;
     font: 18px arial, sans-serif;
+    background-color: grey;
 }
 
 #header {
@@ -18,15 +19,15 @@ body {
 }
 
 #addMore {
-    background-color: grey;
+    background-color: #0A6F57;
 }
 
 #gif {
-    background-color: blueviolet;
+    background-color: #43A18A;
 }
 
 #buttons {
-    background-color: brown;
+    background-color: #0AB58C;
 }
 
 .dog-button {

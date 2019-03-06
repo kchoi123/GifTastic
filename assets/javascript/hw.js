@@ -1,5 +1,5 @@
 // Waiting for entire windows to be ready
-$(document).ready(function () {
+// $(document).ready(function () {
 
     // Creating an array of dogs that a pre-populated for user
     var dogs = [
@@ -42,7 +42,7 @@ $(document).ready(function () {
 
         // Creating queryURL to be dynamically searched
         // Limit to 10 is set on the queryURL link at the very end
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=dc6zaTOxFJmzC&limit=10";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=k6Uja7qOoPb0IxP4CrFv2IGnbSnJWYp3&limit=10&rating=g";
 
         // Setting up ajax call to retrieve JSON results from GIF
         $.ajax({
@@ -113,4 +113,4 @@ $(document).ready(function () {
     // Calling the function renderButtons to display the array as buttons
     renderButtons();
 
-});
+// });
