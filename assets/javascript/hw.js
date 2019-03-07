@@ -1,6 +1,3 @@
-// Waiting for entire windows to be ready
-// $(document).ready(function () {
-
     // Creating an array of dogs that a pre-populated for user
     var dogs = [
         "pug", "chihuahua", "greyhound", "dobermann", "malamute",
@@ -34,6 +31,9 @@
 
     // On click listener to pull gif from gif api
     $(document).on("click", ".dog-button", function () {
+        event.preventDefault();
+
+
         // Emptying the div for a clean DOM
         $("#gif").empty();
 
@@ -64,9 +64,9 @@
                 var ratingText = $("<h1>").html("Rating: " + rating);
 
                 // Creating a variable to store moving gif
-                var animated = results[j].images.fixed_height.url;
+                var animate = results[j].images.fixed_height.url;
                 console.log(results[j].images.fixed_height.url);
-                console.log(animated);
+                console.log(animate);
 
                 // Creating a variable to store still gif
                 var still = results[j].images.fixed_height_still.url;
@@ -77,11 +77,11 @@
                 var dogGif = $("<img>");
                 dogGif.attr("src", still);
                 dogGif.attr("data-still", still);
-                dogGif.attr("data-animated", animated);
+                dogGif.attr("data-animate", animate);
                 dogGif.attr("data-state", "still");
-                dogGif.addClass("dog-gif");
+                dogGif.addClass("dogGiphy");
 
-                // Appending rating and dog-gif to the html DOM
+                // Appending rating and dogGiphy to the html DOM
                 var dogDiv = $("<div>");
                 dogDiv.append(dogGif);
                 dogDiv.append(ratingText);
@@ -113,4 +113,15 @@
     // Calling the function renderButtons to display the array as buttons
     renderButtons();
 
-// });
+    // This on click listener determins the gif to be still or animate
+    $(document).on("click", ".dogGiphy", function() {
+        var state = $(this).attr("data-state");
+
+        if (state === "still") {
+          $(this).attr("src", $(this).attr("data-animate"));
+          $(this).attr("data-state", "animate");
+        } else {
+          $(this).attr("src", $(this).attr("data-still"));
+          $(this).attr("data-state", "still");
+        }
+      });
