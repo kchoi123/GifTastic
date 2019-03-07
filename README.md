@@ -7,4 +7,4 @@
 ###### Please test it out!
 
 ### Screenshot below:
-![alt text](../assets/images/Screenshot_1.jpg)
+![alt text](assets/images/Screenshot_1.jpg)
