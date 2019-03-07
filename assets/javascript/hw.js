@@ -1,7 +1,7 @@
     // Creating an array of dogs that a pre-populated for user
     var dogs = [
-        "pug", "chihuahua", "greyhound", "dobermann", "malamute",
-        "terrier", "sheepdog", "bullmastiff", "samoyed"
+        "pug", "terrier", "husky", "chihuahua", "greyhound", "dobermann", 
+        "malamute", "sheepdog", "bullmastiff", "samoyed", "klee kai", 
     ];
 
     // Using the movie button layout example creating dynamic buttons provided in the array
@@ -26,6 +26,9 @@
 
             // Adding button to HTML
             $("#buttons").prepend(newButton);
+
+            // Create a break for styling purposes
+            $("#buttons").prepend("<br>");
         }
     }
 
@@ -114,6 +117,7 @@
     renderButtons();
 
     // This on click listener determins the gif to be still or animate
+    // using the pausing-gifs excercise
     $(document).on("click", ".dogGiphy", function() {
         var state = $(this).attr("data-state");
 

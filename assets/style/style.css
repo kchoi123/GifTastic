@@ -1,7 +1,7 @@
 /* Styling GifTastic Project */
 
 body {
-    width: 750px;
+    width: 600px;
     margin: 0 auto;
     font: 18px arial, sans-serif;
     background-color: grey;
@@ -26,8 +26,23 @@ body {
     background-color: #43A18A;
 }
 
+.dogGiphy {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 #buttons {
     background-color: #0AB58C;
+    text-align: center;
 }
 
 .dog-button {

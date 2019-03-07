@@ -1,4 +1,4 @@
-# GifTastic
+# GifTastic - Dog Breed Theme
 
 ### This is our API Gif assignment. 
 
