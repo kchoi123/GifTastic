@@ -64,7 +64,7 @@
                 console.log(results[j].rating);
                 console.log(rating);
                 // Creating variable to print rating onto DOM when appended later
-                var ratingText = $("<h1>").html("Rating: " + rating);
+                var ratingText = $("<h3>").html("Rating: " + rating);
 
                 // Creating a variable to store moving gif
                 var animate = results[j].images.fixed_height.url;
